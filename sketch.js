@@ -9,11 +9,15 @@ function setup() {
         points[i].show();
     }
 }
-let points = [new Point(200, 200), new Point(-200, 200), new Point(0, -200)];
+let points = [new Point(250, 250), new Point(-250, 250), new Point(0, -250)];
 function draw() {
     translate(height / 2, width / 2);
     if (keyIsPressed && keyCode === 32) {
-        points.push(points[points.length - 1].avg(points[floor(random() * 3)]));
-        points[points.length - 1].show();
+        for (let i = 0; i < 1000; i++) {
+            points.push(
+                points[points.length - 1].avg(points[floor(random() * 3)])
+            );
+            points[points.length - 1].show();
+        }
     }
 }
