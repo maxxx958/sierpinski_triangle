@@ -6,8 +6,8 @@ class Point {
 
     show() {
         stroke(10);
-        fill(0);
-        circle(this.x, this.y, 1);
+        fill(255);
+        circle(this.x, this.y, 2);
     }
 
     avg(point) {

@@ -3,7 +3,7 @@
 function setup() {
     createCanvas(600, 600);
     translate(height / 2, width / 2);
-    background(255);
+    background(0);
 
     for (let i = 0; i < 3; i++) {
         points[i].show();
